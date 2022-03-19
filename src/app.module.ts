@@ -7,7 +7,7 @@ import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
 
 @Module({
-  imports: [MongooseModule.forRoot('mongodb://localhost/homequest'), UsersModule, AuthModule],
+  imports: [MongooseModule.forRoot('mongodb+srv://admin-user-hq:SR6UK9UzZ8LVTRVH@nodetuts.je9tx.mongodb.net/homequestv2?retryWrites=true&w=majority'), UsersModule, AuthModule],
   controllers: [AppController],
   providers: [AppService],
 })
